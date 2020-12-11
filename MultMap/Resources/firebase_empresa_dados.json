@@ -1,0 +1,8 @@
+{
+    "nome": "MultMapTeste",
+    "email": "",
+    "email_senha": "",
+    "api_key": "AIzaSyA8qVxwu18MsVcsOfXC31Pr8FYwgxDob-o",
+    "databaseURL": "https://multmapteste.firebaseio.com",
+    "storageURL": "multmapteste.appspot.com"
+}

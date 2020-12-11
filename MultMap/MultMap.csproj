@@ -1,0 +1,1038 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7667F505-3F43-4AF2-A05A-4904244987E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MultMap</RootNamespace>
+    <AssemblyName>MultMap</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\localhost\Users\jhona\Desktop\teste\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\localhost\Users\jhona\Desktop\teste\</InstallUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo MapNap.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2299C43B201CAC3705A58BF5AACF2E19ACB988CF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MultMap_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.2.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auxiliar\Criptografia.cs" />
+    <Compile Include="Auxiliar\Import.cs" />
+    <Compile Include="Auxiliar\TemaConfig.cs" />
+    <Compile Include="Data\CN_Ativacao.cs" />
+    <Compile Include="Data\CN_Mensagem.cs" />
+    <Compile Include="Data\SQLite_Mensagem.cs" />
+    <Compile Include="Modelo\Endereco.cs" />
+    <Compile Include="Modelo\Caixa.cs" />
+    <Compile Include="Modelo\Caixa_Alterada.cs" />
+    <Compile Include="Modelo\Conversa.cs" />
+    <Compile Include="Modelo\ErroLog.cs" />
+    <Compile Include="Modelo\Grafico.cs" />
+    <Compile Include="Modelo\Lembrete.cs" />
+    <Compile Include="Modelo\Mensagem.cs" />
+    <Compile Include="Modelo\PerfilDeAcesso.cs" />
+    <Compile Include="Modelo\Relatorios\CaixaR.cs" />
+    <Compile Include="Modelo\Relatorios\GraficoR.cs" />
+    <Compile Include="Modelo\Relatorios\GraficoR2.cs" />
+    <Compile Include="Modelo\Relatorios\RelatorioDados.cs" />
+    <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Modelo\List_Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\exemplos\ButtonPersonalizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\exemplos\ButtonPersonalizado.Designer.cs">
+      <DependentUpon>ButtonPersonalizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\exemplos\Cabecalho.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\exemplos\Cabecalho.Designer.cs">
+      <DependentUpon>Cabecalho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\exemplos\Contato.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\exemplos\Contato.Designer.cs">
+      <DependentUpon>Contato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\exemplos\Filtro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\exemplos\Filtro.Designer.cs">
+      <DependentUpon>Filtro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\exemplos\Layout_Mensagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\exemplos\Layout_Mensagem.Designer.cs">
+      <DependentUpon>Layout_Mensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\exemplos\SeletorDePorta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\exemplos\SeletorDePorta.Designer.cs">
+      <DependentUpon>SeletorDePorta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ferramentas\AppContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\AppContainer.Designer.cs">
+      <DependentUpon>AppContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ferramentas\BordaRadius.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustomCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustomCheckBox.Designer.cs">
+      <DependentUpon>CustomCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustomLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustomProgressBar.Designer.cs">
+      <DependentUpon>CustomProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustonTextBox2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustonTextBox2.Designer.cs">
+      <DependentUpon>CustonTextBox2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustonTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\CustonTextBox.Designer.cs">
+      <DependentUpon>CustonTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ferramentas\FlowGradiente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\ImageRadius.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\ferramentas\PanelGradient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\PopupAtivarSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\PopupAtivarSistema.Designer.cs">
+      <DependentUpon>PopupAtivarSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Popup_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Popup_Caixa.Designer.cs">
+      <DependentUpon>Popup_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Popup_Filtro_Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Popup_Filtro_Relatorio.Designer.cs">
+      <DependentUpon>Popup_Filtro_Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Popup_InfirmacoesDoSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Popup_InfirmacoesDoSoftware.Designer.cs">
+      <DependentUpon>Popup_InfirmacoesDoSoftware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Popup_Lembrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Popup_Lembrete.Designer.cs">
+      <DependentUpon>Popup_Lembrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Popup_Delete_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Popup_Delete_Caixa.designer.cs">
+      <DependentUpon>Popup_Delete_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Popup_PerfilDeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Popup_PerfilDeUsuario.Designer.cs">
+      <DependentUpon>Popup_PerfilDeUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Popup_Viabilidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Popup_Viabilidade.Designer.cs">
+      <DependentUpon>Popup_Viabilidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Ajuda.Designer.cs">
+      <DependentUpon>Tela_Ajuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Chat.Designer.cs">
+      <DependentUpon>Tela_Ferramentas_Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Email.Designer.cs">
+      <DependentUpon>Tela_Ferramentas_Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Lembrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Lembrete.Designer.cs">
+      <DependentUpon>Tela_Ferramentas_Lembrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Map.Designer.cs">
+      <DependentUpon>Tela_Ferramentas_Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Navegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Navegador.Designer.cs">
+      <DependentUpon>Tela_Ferramentas_Navegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Navegador_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Ferramentas_Navegador_Control.Designer.cs">
+      <DependentUpon>Tela_Ferramentas_Navegador_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Historico_Alteracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Historico_Alteracao.designer.cs">
+      <DependentUpon>Tela_Historico_Alteracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Historico_Exclusao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Historico_Exclusao.designer.cs">
+      <DependentUpon>Tela_Historico_Exclusao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Relatorio.Designer.cs">
+      <DependentUpon>Tela_Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Inicio.Designer.cs">
+      <DependentUpon>Tela_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Login.Designer.cs">
+      <DependentUpon>Tela_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_Relatorio_Caixas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_Relatorio_Caixas.designer.cs">
+      <DependentUpon>Tela_Relatorio_Caixas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Tela_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Tela_User.Designer.cs">
+      <DependentUpon>Tela_User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Auxiliar\RelatorioGrafico1.3.rdlc" />
+    <EmbeddedResource Include="Auxiliar\RelatorioGrafico1.2.rdlc" />
+    <EmbeddedResource Include="Auxiliar\RelatorioGrafico1.1.rdlc" />
+    <EmbeddedResource Include="Auxiliar\RelatorioImprimir1.2.rdlc" />
+    <EmbeddedResource Include="Auxiliar\RelatorioImprimir2.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\exemplos\ButtonPersonalizado.resx">
+      <DependentUpon>ButtonPersonalizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\exemplos\Cabecalho.resx">
+      <DependentUpon>Cabecalho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\exemplos\Contato.resx">
+      <DependentUpon>Contato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\exemplos\Filtro.resx">
+      <DependentUpon>Filtro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\exemplos\Layout_Mensagem.resx">
+      <DependentUpon>Layout_Mensagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\exemplos\SeletorDePorta.resx">
+      <DependentUpon>SeletorDePorta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ferramentas\CustomCheckBox.resx">
+      <DependentUpon>CustomCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ferramentas\CustonTextBox2.resx">
+      <DependentUpon>CustonTextBox2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ferramentas\CustonTextBox.resx">
+      <DependentUpon>CustonTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\PopupAtivarSistema.resx">
+      <DependentUpon>PopupAtivarSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Popup_Caixa.resx">
+      <DependentUpon>Popup_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Popup_Filtro_Relatorio.resx">
+      <DependentUpon>Popup_Filtro_Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Popup_InfirmacoesDoSoftware.resx">
+      <DependentUpon>Popup_InfirmacoesDoSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Popup_Lembrete.resx">
+      <DependentUpon>Popup_Lembrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Popup_Delete_Caixa.resx">
+      <DependentUpon>Popup_Delete_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Popup_PerfilDeUsuario.resx">
+      <DependentUpon>Popup_PerfilDeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Popup_Viabilidade.resx">
+      <DependentUpon>Popup_Viabilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auxiliar\RelatorioImprimir1.1.rdlc" />
+    <EmbeddedResource Include="Telas\Tela_Ajuda.resx">
+      <DependentUpon>Tela_Ajuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Ferramentas_Chat.resx">
+      <DependentUpon>Tela_Ferramentas_Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Ferramentas_Email.resx">
+      <DependentUpon>Tela_Ferramentas_Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Ferramentas_Lembrete.resx">
+      <DependentUpon>Tela_Ferramentas_Lembrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Ferramentas_Map.resx">
+      <DependentUpon>Tela_Ferramentas_Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Ferramentas_Navegador.resx">
+      <DependentUpon>Tela_Ferramentas_Navegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Ferramentas_Navegador_Control.resx">
+      <DependentUpon>Tela_Ferramentas_Navegador_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Historico_Alteracao.resx">
+      <DependentUpon>Tela_Historico_Alteracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Historico_Exclusao.resx">
+      <DependentUpon>Tela_Historico_Exclusao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Relatorio.resx">
+      <DependentUpon>Tela_Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Inicio.resx">
+      <DependentUpon>Tela_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Login.resx">
+      <DependentUpon>Tela_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_Relatorio_Caixas.resx">
+      <DependentUpon>Tela_Relatorio_Caixas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Tela_User.resx">
+      <DependentUpon>Tela_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="bin\x86\Release\files\firebase-adminsdk.json" />
+    <None Include="MultMap_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Caixa.datasource" />
+    <None Include="Properties\DataSources\Meu_Terminal.Modelo.Relatorios.CaixaR.datasource" />
+    <None Include="Properties\DataSources\Meu_Terminal.Modelo.Relatorios.GraficoR.datasource" />
+    <None Include="Properties\DataSources\Meu_Terminal.Modelo.Relatorios.RelatorioDados.datasource" />
+    <None Include="Properties\DataSources\MultMap.Modelo.Relatorios.CaixaR.datasource" />
+    <None Include="Properties\DataSources\MultMap.Modelo.Relatorios.GraficoR.datasource" />
+    <None Include="Properties\DataSources\MultMap.Modelo.Relatorios.GraficoR2.datasource" />
+    <None Include="Properties\DataSources\MultMap.Modelo.Relatorios.RelatorioDados.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\criptografia.json" />
+    <None Include="Resources\firebase_empresa_dados.json" />
+    <None Include="Resources\firebase_adminsdk.json" />
+    <None Include="Resources\ic_add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_ajuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_alarme_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_atualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_atualizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_chat_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_configuracoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_disabled_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_disabled_relatorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_ferramentas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_historico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_historico_alteracao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_historico_exclusao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_lembretes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_mais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_navegador_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_note_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_person_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_person_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_person_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_pesquisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_place_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_relatorio_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_relatorio_caixas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_relatorio_excluir_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_relatorio_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_relatorio_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_seta_ant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_seta_prox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_sobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_user.multmap" />
+    <None Include="Resources\ic_user_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-configurações-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoslz.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgalarme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbntfecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbntlembrepino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbntlougt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbntmini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgicointernet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgicomap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgicowhatsap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imglogorelatorio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telafundoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_preto_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_preto_chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_user_blanc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_branco_send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_preto_send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_dock_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_branco_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_dock_pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.close_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.restore_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.app_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.restore_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.close_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.app_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.minus_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.minus_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_branco_atualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm_1.mp3" />
+    <None Include="bin\x86\Release\files\Alarm_1.mp3" />
+    <None Include="bin\x86\Release\files\Alarm_2.mp3" />
+    <None Include="bin\x86\Release\files\Alarm_3.mp3" />
+    <Content Include="logo MapNap.ico" />
+    <None Include="Resources\loading_circle_3.gif" />
+    <None Include="Resources\loading_circle_2.gif" />
+    <None Include="Resources\loading_circle.gif" />
+    <None Include="Resources\logo MapNap.ico" />
+    <None Include="Resources\icone_senha_cinza.png" />
+    <None Include="Resources\icone_login_cinza.png" />
+    <None Include="Resources\ic_azul_relatorio.png" />
+    <None Include="Resources\ic_azul_mais.png" />
+    <None Include="Resources\ic_azul_menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AjaxMin">
+      <Version>5.14.5506.26202</Version>
+    </PackageReference>
+    <PackageReference Include="cef.redist.x64">
+      <Version>75.1.14</Version>
+    </PackageReference>
+    <PackageReference Include="cef.redist.x86">
+      <Version>75.1.14</Version>
+    </PackageReference>
+    <PackageReference Include="CefSharp.Common">
+      <Version>75.1.143</Version>
+    </PackageReference>
+    <PackageReference Include="CefSharp.WinForms">
+      <Version>75.1.143</Version>
+    </PackageReference>
+    <PackageReference Include="EasyTabs">
+      <Version>1.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="FirebaseAdmin">
+      <Version>1.9.1</Version>
+    </PackageReference>
+    <PackageReference Include="FirebaseAuthentication.net">
+      <Version>3.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="FirebaseDatabase.net">
+      <Version>4.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="FirebaseStorage.net">
+      <Version>1.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="GMap.NET.Windows">
+      <Version>1.9.3</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Api.Gax">
+      <Version>2.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Api.Gax.Rest">
+      <Version>2.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Apis">
+      <Version>1.40.0</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Apis.Auth">
+      <Version>1.40.0</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Apis.Core">
+      <Version>1.40.0</Version>
+    </PackageReference>
+    <PackageReference Include="jQuery">
+      <Version>1.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="jQuery.Validation">
+      <Version>1.9.0</Version>
+    </PackageReference>
+    <PackageReference Include="LiteDB">
+      <Version>4.1.4</Version>
+    </PackageReference>
+    <PackageReference Include="MetroModernUI">
+      <Version>1.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <Version>5.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Razor">
+      <Version>3.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebPages">
+      <Version>3.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax">
+      <Version>3.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Validation">
+      <Version>2.0.20710</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.Platforms">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms">
+      <Version>150.1400.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SqlServer.Types">
+      <Version>14.0.314.76</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Web.Infrastructure">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Win32.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="NETStandard.Library">
+      <Version>1.6.1</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="RestSharp">
+      <Version>104.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.AppContext">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Concurrent">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>1.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Console">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>1.0.112</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Core">
+      <Version>1.0.112</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <Version>1.0.112</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Linq">
+      <Version>1.0.112</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.Debug">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.DiagnosticSource">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.Tools">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.Tracing">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Globalization">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Globalization.Calendars">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Interactive.Async">
+      <Version>3.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.Compression">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.Compression.ZipFile">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.FileSystem">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.FileSystem.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Linq">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Linq.Expressions">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Sockets">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ObjectModel">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Reactive">
+      <Version>4.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Reflection">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Reflection.Extensions">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Reflection.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Resources.ResourceManager">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.Extensions">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.Handles">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.InteropServices">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.Numerics">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Algorithms">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Encoding">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.X509Certificates">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Encoding">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Encoding.Extensions">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.RegularExpressions">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading.Tasks">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Threading.Timer">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Xml.ReaderWriter">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Xml.XDocument">
+      <Version>4.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

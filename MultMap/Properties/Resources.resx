@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="appbar_minus_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.minus_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_person" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_person.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_dock_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading_circle_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading_circle_2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_bnt_lougt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgbntlougt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_user_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_bnt_lembrepino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgbntlembrepino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_relatorio_excluir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_relatorio_excluir_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoslz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icoslz.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_menos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_azul_menos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_historico_alteracao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_historico_alteracao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_atualizar_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_atualizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_ajuda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_ajuda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_branco_atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_relatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_relatorio_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_person_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_relatorio_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_sobre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_sobre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_ferramentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_ferramentas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_arrow_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_arrow_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_seta_prox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_seta_prox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar_close_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.close_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_relatorio_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_relatorio_caixas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_chat_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_relatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_relatorio_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone_login_cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icone_login_cinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_alarme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_alarme_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar_window_restore_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.window.restore_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone_senha_cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icone_senha_cinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_configuracoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_configuracoes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_ico_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgicomap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo MapNap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo MapNap.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_person_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_person_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_dock_pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_mais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_mais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_inicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_mais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_azul_mais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_navegador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_navegador_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_ico_internet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgicointernet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_browser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_browser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_note" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_note_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_seta_ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_seta_ant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar_window_restore_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.window.restore_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar.minus_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.minus_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_branco_send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar_app_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.app_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_alarme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgalarme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_preto_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_preto_map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_pesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_pesquisar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar_app_dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.app_dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_person_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_person_group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_arrow_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_arrow_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar_close_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.close_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_bnt_mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgbntmini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_lembretes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_lembretes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_logo_relatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imglogorelatorio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_disabled_relatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_disabled_relatorio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_branco_email.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_preto_send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_preto_send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_dock_place" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_place_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_bnt_fechar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgbntfecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_disabled_map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_disabled_map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_preto_chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_preto_chat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_azul_relatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_azul_relatorio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading_circle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_historico_exclusao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_historico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_historico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_user_blanc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_branco_chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_chat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading_circle_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading_circle_3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alarm_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alarm_1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ic_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_user.multmap;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="firebase_empresa_dados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firebase_empresa_dados.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="firebase_adminsdk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\firebase_adminsdk.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="criptografia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\criptografia.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
