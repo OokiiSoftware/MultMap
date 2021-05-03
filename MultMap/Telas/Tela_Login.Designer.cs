@@ -327,7 +327,7 @@
             this.Name = "Tela_Login";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Meu Terminal, Login";
+            this.Text = "MultMap - Login";
             this.Painel_Azul.ResumeLayout(false);
             this.Painel_Azul.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
